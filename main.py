@@ -7,8 +7,8 @@ def main():
     print(text)
 
     # Count the words
-    words_number = count_words(text)
-    print('Number of  words in the book:', words_number)
+    num_words = get_num_words(text)
+    print(f"{num_words} words found in the book.")
 
 
 def get_book_text(path_to_book):
@@ -17,7 +17,7 @@ def get_book_text(path_to_book):
         return book_contents
 
 
-def count_words(text):
+def get_num_words(text):
     words = text.split()
     return len(words)
 
